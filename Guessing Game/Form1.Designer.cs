@@ -33,7 +33,7 @@
             this.numInput = new System.Windows.Forms.TextBox();
             this.guessButton = new System.Windows.Forms.Button();
             this.outputLabel = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.outputLabel2 = new System.Windows.Forms.Label();
             this.toDelete = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
@@ -88,15 +88,15 @@
             this.outputLabel.TabIndex = 4;
             this.outputLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label1
+            // outputLabel2
             // 
-            this.label1.BackColor = System.Drawing.Color.LimeGreen;
-            this.label1.Font = new System.Drawing.Font("Vineta BT", 24F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(245, 392);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(258, 49);
-            this.label1.TabIndex = 5;
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.outputLabel2.BackColor = System.Drawing.Color.LimeGreen;
+            this.outputLabel2.Font = new System.Drawing.Font("Vineta BT", 24F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.outputLabel2.Location = new System.Drawing.Point(245, 392);
+            this.outputLabel2.Name = "outputLabel2";
+            this.outputLabel2.Size = new System.Drawing.Size(258, 49);
+            this.outputLabel2.TabIndex = 5;
+            this.outputLabel2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // toDelete
             // 
@@ -114,7 +114,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(515, 450);
             this.Controls.Add(this.toDelete);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.outputLabel2);
             this.Controls.Add(this.outputLabel);
             this.Controls.Add(this.guessButton);
             this.Controls.Add(this.numInput);
@@ -134,7 +134,7 @@
         private System.Windows.Forms.TextBox numInput;
         private System.Windows.Forms.Button guessButton;
         private System.Windows.Forms.Label outputLabel;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label outputLabel2;
         private System.Windows.Forms.Label toDelete;
     }
 }

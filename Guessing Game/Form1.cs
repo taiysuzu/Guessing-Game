@@ -30,22 +30,54 @@ namespace Guessing_Game
 
         private void GuessButton_Click(object sender, EventArgs e)
         {
-            int guess = Convert.ToInt32(numInput.Text);
-            if (guess > num)
+            try
             {
-                outputLabel.Text = "Too high!";
+                int guess = Convert.ToInt32(numInput.Text);
+
+                if (guess > num)
+                {
+                    outputLabel.Text = "Too high!";
+                }
+                else if (guess < num)
+                {
+                    outputLabel.Text = "Too low!";
+                }
+                else if (guess == num)
+                {
+                    outputLabel.Text = "You got it!";
+                }
+
+                int diff = guess - num;
+                int diffAbsolute = Math.Abs(diff);
+                if (diffAbsolute > 50)
+                {
+                    outputLabel2.Text = "Freezing";
+                }
+                else if (diffAbsolute > 25)
+                {
+                    outputLabel2.Text = "Cold";
+                }
+                else if (diffAbsolute > 15)
+                {
+                    outputLabel2.Text = "Cool";
+                }
+                else if (diffAbsolute > 10)
+                {
+                    outputLabel2.Text = "Warm";
+                }
+                else if (diffAbsolute > 5)
+                {
+                    outputLabel2.Text = "Hot";
+                }
+                else if (diffAbsolute < 4)
+                {
+                    outputLabel2.Text = "Boiling";
+                }
             }
-            else if (guess < num)
+            catch
             {
-                outputLabel.Text = "Too low!";
+                outputLabel.Text = "Guess a number.";
             }
-            else if (guess == num)
-            {
-                outputLabel.Text = "You got it!";
-            }
-
-
-
         }
     }
 }

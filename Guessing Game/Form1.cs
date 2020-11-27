@@ -25,6 +25,7 @@ namespace Guessing_Game
             InitializeComponent();
             this.BackColor = Color.Black;
             num = randGen.Next(1, 101);
+            toDelete.Text = $"{num}";
         }
 
         private void GuessButton_Click(object sender, EventArgs e)

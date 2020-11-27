@@ -101,6 +101,7 @@
             // toDelete
             // 
             this.toDelete.AutoSize = true;
+            this.toDelete.ForeColor = System.Drawing.Color.White;
             this.toDelete.Location = new System.Drawing.Point(397, 139);
             this.toDelete.Name = "toDelete";
             this.toDelete.Size = new System.Drawing.Size(35, 13);
